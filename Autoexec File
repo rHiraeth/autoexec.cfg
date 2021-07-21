@@ -1,0 +1,93 @@
+name "Hiraeth"
+m_rawinput "1"									// Takes the direct input of your mouse
+m_filter "0"									// Makes sure any kind of mouse filtering is off
+m_acceleration "0"								// Once again this makes sure mouse acceleration is off
+hud_setting_minimapRotate "1"							// This setting allows the minimap to rotate with you (default 0)
+sprint_view_shake_style "1"							// Less Headbob
+hud_setting_pingAlpha "0.2"							// Opacity of the pings and downed banners (default 1)	
+colorblind_mode 0								// Colorblind modes
+player_setting_damage_closes_deathbox_menu "0"					// Your inventory wont auto-close anymore when receiving damage	
+chroma_enable 0									// Disables Razer Chroma	
+hud_setting_adsDof "0"
+// CrossPlay_user_optin "0"							// Disables Crossplay
+mat_fullbright "1"				                                //Brighter materials/textures, very good to use.
+cl_showfps 4 1 									// 1 gives map details 4 give fps ping frametime
+cl_showpos 1 0"									// X Y Z pos including volocity/speed
+mat_queue_mode "2" 				                                //A value of -1 uses the default for your system, a value of 0 uses synchronous single thread, 1 uses queued single threaded mode
+						                                  and value of 2 uses multi-threaded mode.
+
+
+
+
+// Personal-Settings----------------------------------------------
+// My Personal settings ingame. feel free to changet them!
+// IMPORTANT! - Remove "//" infront of the commands to take effect 
+
+//mouse_sensitivity "1.8"							// Your mouse sensitivity
+//bind "MOUSE2" "+zoom"								// Ads hold
+//bind "e" "+use; +use_long" 0							// Your use bind
+//unbind "mouse4"								// Unbinds sidebuttons on your mouse
+//unbind "mouse5"
+//bind "q" "+offhand1" 0							// Your Tactical
+//bind "x" "weaponSelectPrimary2" 0						// Your Fists	
+//bind "f" "ping_specific_type ENEMY" 0						// Ping Enemy	
+//cl_fovScale "1.7"								// 1.55 = 110FOV | 1.7 = 120FOV 	
+//bind "SPACE" "+jump" 0							// Normal Jump
+//bind "MWHEELDOWN" "+jump" 0							// Bhop
+//bind "MWHEELUP" "+jump; +forward" 0						// Tap-Strafe
+
+
+// CUSTOM-BINDS--------------------------------------------------
+
+bind "F2" "toggle shownet_enabled 1 0"						// Net Graph Toggle
+bind "F3" "mat_setvideomode 1680 1050 0 0"					// Changes res
+bind "F4" "mat_setvideomode 1920 1080 0 0"					// Changes res
+bind "F7" "exec autoexec.cfg"
+	// If you have accidentally changes something in the video
+	// options just press F7 and the settings will load again
+bind "F5" "toggle stream_memory 0 300000"					// Texture quality toggle
+bind "o" "miles_reboot"								// Reboots the audio engine
+
+
+// Audio Occlusion/Distortion-------------------------------------
+
+miles_channels 2								// Tells the number of audio channels to the audio engine, try 8 if ur using one of those fake 7.1 headsets
+miles_occlusion 0								// Sound bouncing of walls (currently no effect)
+miles_occlusion_force 0								// Sound bouncing of walls (currently no effect)
+miles_occlusion_partial 0							// Sound bouncing of walls (currently no effect)
+miles_max_sounds_per_server_frame "400"						//default 50
+cl_footstep_event_max_dist "5000"			                        //default 2500
+sound_num_speakers 2								// Also Number of your audio channels
+sound_without_focus 1								// Game does not stop to play sound when tabbed out
+
+
+// PRIVACY-SETTINGS----------------------------------------------
+
+telemetry_client_enable 0
+telemetry_client_sendInterval 0
+pin_opt_in 0
+voice_forcemicrecord 0
+
+// GRAPHICS-BASED-COMMANDS---------------------------------------
+
+fps_max unlimited            							// Locks/Unlocks Framerate
+mat_picmip 4									// Basically this is the texture Quality controller of the game 4 = Lowest ... 1 = High
+stream_memory "300000"								// Change this to 0 if you want to use mat_picmip 4 (default 300000)
+mat_forceaniso 0								// No anisotropic filtering (default 16)
+ssao_enabled 0									// Disables SSAO
+sssss_enable 0									// Disables Screen Space Subsurface Scattering
+particle_cpu_level 0								// Reduces the quality of particles
+cl_ragdoll_maxcount 0								// Disables Ragdoll
+cl_particle_fallback_multiplier 0.0000001					// Multiplier for falling back to cheaper effects under load
+cl_particle_fallback_base 0.0000001						// Base for falling back to cheaper effects under load
+noise_filter_scale 0								// Removes Film-grain
+mat_bloom_scalefactor_scalar 0							// Disables bloom (nothing to do with recoil, just the graphical effect you fn weirdo)
+r_createmodeldecals 0								// Game does not create decals (bullet impacts etc)
+mat_disable_bloom 1								// Disables bloom (nothing to do with recoil, just the graphical effect you fn weirdo)
+nx_static_lobby_mode 2								// Nintendo switch cvar that got somehow into the main game, "2" reduces loading times
+cl_gib_allow 0									// Allow gibs
+r_cleardecals									// Clears all decals on exec
+r_cheapwaterstart 0.000001							// Flat water
+mat_specular 0
+mat_bumpmap 0
+r_dynamic 0
